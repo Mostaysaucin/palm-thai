@@ -2,7 +2,7 @@ const galleryImages = [
   { src: "https://images.unsplash.com/photo-1569562211093-4ed0d0758f12?w=600&h=750&fit=crop&q=80", alt: "Khao Soi Chicken - Northern Thai Egg Noodle Curry", aspectClass: "aspect-[4/5]" },
   { src: "https://images.unsplash.com/photo-1559314809-0d155014e29e?w=600&h=800&fit=crop&q=80", alt: "Pad Thai with shrimp", aspectClass: "aspect-[3/4]" },
   { src: "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=600&h=600&fit=crop&q=80", alt: "Green Curry with chicken", aspectClass: "aspect-square" },
-  { src: "https://images.unsplash.com/photo-1536510344784-05f1cdb15d07?w=600&h=750&fit=crop&q=80", alt: "Fresh Spring Rolls", aspectClass: "aspect-[4/5]" },
+  { src: "https://images.unsplash.com/photo-1544025162-d76694265947?w=600&h=750&fit=crop&q=80", alt: "Fresh Spring Rolls", aspectClass: "aspect-[4/5]" },
   { src: "https://images.unsplash.com/photo-1548943487-a2e4e43b4853?w=600&h=800&fit=crop&q=80", alt: "Tom Kha Soup", aspectClass: "aspect-[3/4]" },
   { src: "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=600&h=600&fit=crop&q=80", alt: "Mango Sticky Rice dessert", aspectClass: "aspect-square" },
   { src: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&h=450&fit=crop&q=80", alt: "Palm Thai restaurant interior", aspectClass: "aspect-[4/3]" },
