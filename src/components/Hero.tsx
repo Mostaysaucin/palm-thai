@@ -7,7 +7,7 @@ export default function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
-          src="https://images.unsplash.com/photo-1562565652-a0d8f0c59eb4?w=1920&h=1080&fit=crop&q=80"
+          src="https://s3-media0.fl.yelpcdn.com/bphoto/awniP1O_pgPNIqryhZPgSw/o.jpg"
           alt=""
           className="w-full h-full object-cover"
         />

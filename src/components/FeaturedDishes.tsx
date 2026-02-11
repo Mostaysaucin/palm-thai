@@ -8,14 +8,14 @@ const featuredDishes = [
     description: "Northern Thai Egg Noodle Curry with secret curry paste recipe, bean sprout, crispy fried shallots, roasted chili oil, and lime wedge topped with crispy wonton strips",
     price: "$15.95",
     badge: "Must Try",
-    image: "https://images.unsplash.com/photo-1569562211093-4ed0d0758f12?w=640&h=480&fit=crop&q=80",
+    image: "https://s3-media0.fl.yelpcdn.com/bphoto/p3wBVwRmPY1H0m13n6Enbw/o.jpg",
   },
   {
     name: "Pad Thai",
     description: "Stir-fried thin rice noodles with egg, bean sprout, scallion, and crushed peanut",
     price: "From $15.95",
     badge: null,
-    image: "https://images.unsplash.com/photo-1559314809-0d155014e29e?w=640&h=480&fit=crop&q=80",
+    image: "https://s3-media0.fl.yelpcdn.com/bphoto/V2DDsvDgH-OVg1zrwUszww/o.jpg",
   },
   {
     name: "Palm Thai Soft Shell Crab",
@@ -29,21 +29,21 @@ const featuredDishes = [
     description: "Crispy duck topped with Chu Chee curry sauce and a side of mixed vegetables with kaffir lime leaves",
     price: "$27.95",
     badge: null,
-    image: "https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=640&h=480&fit=crop&q=80",
+    image: "https://s3-media0.fl.yelpcdn.com/bphoto/Hz-YUCpYdzP5y474hdEuLQ/o.jpg",
   },
   {
     name: "Pineapple Fried Rice",
     description: "Stir-fried jasmine rice with egg, pineapple, roasted cashew nut, raisin, carrot, onion with a hint of curry flavor",
     price: "From $15.95",
     badge: null,
-    image: "https://images.unsplash.com/photo-1512058564366-18510be2db19?w=640&h=480&fit=crop&q=80",
+    image: "https://s3-media0.fl.yelpcdn.com/bphoto/DU23HFWC1LP4QFhe6yJj7g/o.jpg",
   },
   {
     name: "Drunken Noodle",
     description: "Stir-fried wide ribbon rice noodles with bell pepper, onion, green bean, carrot, Thai chili, and basil leaves",
     price: "From $15.95",
     badge: null,
-    image: "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=640&h=480&fit=crop&q=80",
+    image: "https://s3-media0.fl.yelpcdn.com/bphoto/QW26Io-ZLQmDdg9RhemWWw/o.jpg",
   },
 ];
 

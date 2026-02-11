@@ -1,13 +1,13 @@
 const galleryImages = [
-  { src: "https://images.unsplash.com/photo-1569562211093-4ed0d0758f12?w=600&h=750&fit=crop&q=80", alt: "Khao Soi Chicken - Northern Thai Egg Noodle Curry", aspectClass: "aspect-[4/5]" },
-  { src: "https://images.unsplash.com/photo-1559314809-0d155014e29e?w=600&h=800&fit=crop&q=80", alt: "Pad Thai with shrimp", aspectClass: "aspect-[3/4]" },
-  { src: "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=600&h=600&fit=crop&q=80", alt: "Green Curry with chicken", aspectClass: "aspect-square" },
-  { src: "https://images.unsplash.com/photo-1544025162-d76694265947?w=600&h=750&fit=crop&q=80", alt: "Fresh Spring Rolls", aspectClass: "aspect-[4/5]" },
-  { src: "https://images.unsplash.com/photo-1548943487-a2e4e43b4853?w=600&h=800&fit=crop&q=80", alt: "Tom Kha Soup", aspectClass: "aspect-[3/4]" },
-  { src: "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=600&h=600&fit=crop&q=80", alt: "Mango Sticky Rice dessert", aspectClass: "aspect-square" },
-  { src: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&h=450&fit=crop&q=80", alt: "Palm Thai restaurant interior", aspectClass: "aspect-[4/3]" },
-  { src: "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=600&h=800&fit=crop&q=80", alt: "Drunken Noodles close-up", aspectClass: "aspect-[3/4]" },
-  { src: "https://images.unsplash.com/photo-1512058564366-18510be2db19?w=600&h=600&fit=crop&q=80", alt: "Pineapple Fried Rice", aspectClass: "aspect-square" },
+  { src: "https://s3-media0.fl.yelpcdn.com/bphoto/Mfomi-GxO7WNxz_JoIRHnw/o.jpg", alt: "Khao Soi Chicken - Northern Thai Egg Noodle Curry", aspectClass: "aspect-[4/5]" },
+  { src: "https://s3-media0.fl.yelpcdn.com/bphoto/ODI5FM_8uOnzoonl-67Mug/o.jpg", alt: "Pad Thai with chicken", aspectClass: "aspect-[3/4]" },
+  { src: "https://s3-media0.fl.yelpcdn.com/bphoto/iTUqSXl2yTJhoMFOfQhpkA/o.jpg", alt: "Green Curry", aspectClass: "aspect-square" },
+  { src: "https://s3-media0.fl.yelpcdn.com/bphoto/PleAsrsum0rNgENzAveWEg/o.jpg", alt: "Fresh Rolls with peanut sauce", aspectClass: "aspect-[4/5]" },
+  { src: "https://s3-media0.fl.yelpcdn.com/bphoto/at2s-JB1XXvDWb95-LQUaA/o.jpg", alt: "Tom Kha Soup", aspectClass: "aspect-[3/4]" },
+  { src: "https://s3-media0.fl.yelpcdn.com/bphoto/b775HFPPWTmFFjmGp2IU2A/o.jpg", alt: "Mango and Sticky Rice", aspectClass: "aspect-square" },
+  { src: "https://s3-media0.fl.yelpcdn.com/bphoto/8ioghb9T3A5Ve0Lv81Q3wg/o.jpg", alt: "Palm Thai restaurant interior", aspectClass: "aspect-[4/3]" },
+  { src: "https://s3-media0.fl.yelpcdn.com/bphoto/5WX7l6vsVqj1Gyqgs4kujQ/o.jpg", alt: "Drunken Noodle", aspectClass: "aspect-[3/4]" },
+  { src: "https://s3-media0.fl.yelpcdn.com/bphoto/4lpXATlIh3uLoU0bg23TdA/o.jpg", alt: "Pineapple Fried Rice", aspectClass: "aspect-square" },
 ];
 
 export default function Gallery() {

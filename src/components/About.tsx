@@ -60,7 +60,7 @@ export default function About() {
           <div className="relative">
             <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="https://images.unsplash.com/photo-1559314809-0d155014e29e?w=800&h=1000&fit=crop&q=80"
+                src="https://s3-media0.fl.yelpcdn.com/bphoto/p3wBVwRmPY1H0m13n6Enbw/o.jpg"
                 alt="Authentic Thai cuisine at Palm Thai"
                 className="w-full h-full object-cover"
               />
