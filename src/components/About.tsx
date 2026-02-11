@@ -2,16 +2,18 @@ export default function About() {
   return (
     <section id="about" className="section-padding bg-background">
       <div className="max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Text Content */}
           <div>
             <p className="text-primary font-body text-sm tracking-widest uppercase mb-4">
               Our Story
             </p>
-            <h2 className="font-heading text-4xl sm:text-5xl text-text-primary mb-6">
-              A Taste of Thailand in Tampa Palms
+            <h2 className="font-heading text-4xl sm:text-5xl text-text-primary mb-8 leading-tight">
+              A Taste of Thailand
+              <br />
+              <span className="text-primary">in Tampa Palms</span>
             </h2>
-            <div className="space-y-4 text-text-secondary text-base leading-relaxed">
+            <div className="space-y-5 text-text-secondary text-base leading-relaxed">
               <p>
                 Nestled in the heart of Tampa Palms, Palm Thai brings the vibrant
                 flavors and warm hospitality of Thailand to the New Tampa
@@ -34,48 +36,51 @@ export default function About() {
                 us 847+ five-star reviews and counting.
               </p>
             </div>
-            <div className="mt-8 flex items-center gap-6">
+
+            {/* Stats */}
+            <div className="mt-10 flex items-center gap-8">
               <div className="text-center">
-                <span className="block font-heading text-3xl text-primary">
-                  81+
-                </span>
-                <span className="text-text-secondary text-sm">Dishes</span>
+                <span className="block font-heading text-4xl text-primary">81+</span>
+                <span className="text-text-secondary text-sm mt-1 block">Dishes</span>
               </div>
-              <div className="w-px h-12 bg-text-secondary/20" />
+              <div className="w-px h-14 bg-text-secondary/15" />
               <div className="text-center">
-                <span className="block font-heading text-3xl text-primary">
-                  4.55
-                </span>
-                <span className="text-text-secondary text-sm">Rating</span>
+                <span className="block font-heading text-4xl text-primary">4.55</span>
+                <span className="text-text-secondary text-sm mt-1 block">Rating</span>
               </div>
-              <div className="w-px h-12 bg-text-secondary/20" />
+              <div className="w-px h-14 bg-text-secondary/15" />
               <div className="text-center">
-                <span className="block font-heading text-3xl text-primary">
-                  847+
-                </span>
-                <span className="text-text-secondary text-sm">Reviews</span>
+                <span className="block font-heading text-4xl text-primary">847+</span>
+                <span className="text-text-secondary text-sm mt-1 block">Reviews</span>
               </div>
             </div>
           </div>
 
           {/* Image */}
           <div className="relative">
-            <div className="aspect-[4/5] rounded-2xl overflow-hidden bg-section-alt-bg relative">
-              {/* Decorative placeholder for restaurant image */}
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
-                <div className="text-center p-8">
-                  <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-primary/20 flex items-center justify-center">
-                    <svg className="w-12 h-12 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
-                    </svg>
-                  </div>
-                  <p className="font-heading text-2xl text-text-primary/60">Palm Thai</p>
-                  <p className="text-text-secondary/60 text-sm mt-2">Tampa Palms, FL</p>
-                </div>
+            <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl">
+              <img
+                src="https://images.unsplash.com/photo-1559314809-0d155014e29e?w=800&h=1000&fit=crop&q=80"
+                alt="Authentic Thai cuisine at Palm Thai"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            {/* Floating card */}
+            <div className="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-xl p-5 max-w-[200px]">
+              <div className="flex gap-0.5 mb-2">
+                {[1,2,3,4,5].map(s => (
+                  <svg key={s} className="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                ))}
               </div>
+              <p className="text-text-primary text-xs font-medium leading-snug italic">
+                &ldquo;Best Thai food in the New Tampa area&rdquo;
+              </p>
+              <p className="text-text-secondary text-xs mt-1">— Google Review</p>
             </div>
             {/* Decorative accent */}
-            <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-primary/10 rounded-2xl -z-10" />
+            <div className="absolute -top-4 -right-4 w-24 h-24 bg-primary/10 rounded-2xl -z-10" />
           </div>
         </div>
       </div>

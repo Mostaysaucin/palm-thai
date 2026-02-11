@@ -5,51 +5,45 @@ import { useRef } from "react";
 const featuredDishes = [
   {
     name: "Khao Soi Chicken",
-    description:
-      "Northern Thai Egg Noodle Curry with secret curry paste recipe, bean sprout, crispy fried shallots, roasted chili oil, and lime wedge topped with crispy wonton strips",
+    description: "Northern Thai Egg Noodle Curry with secret curry paste recipe, bean sprout, crispy fried shallots, roasted chili oil, and lime wedge topped with crispy wonton strips",
     price: "$15.95",
     badge: "Must Try",
-    bgGradient: "from-amber-900/80 to-amber-700/80",
+    image: "https://images.unsplash.com/photo-1569562211093-4ed0d0758f12?w=640&h=480&fit=crop&q=80",
   },
   {
     name: "Pad Thai",
-    description:
-      "Stir-fried thin rice noodles with egg, bean sprout, scallion, and crushed peanut",
+    description: "Stir-fried thin rice noodles with egg, bean sprout, scallion, and crushed peanut",
     price: "From $15.95",
     badge: null,
-    bgGradient: "from-orange-900/80 to-orange-700/80",
+    image: "https://images.unsplash.com/photo-1559314809-0d155014e29e?w=640&h=480&fit=crop&q=80",
   },
   {
     name: "Palm Thai Soft Shell Crab",
-    description:
-      "Crispy soft shell crab and shrimp on a bed of mixed vegetables topped with creamy avocado green curry sauce",
+    description: "Crispy soft shell crab and shrimp on a bed of mixed vegetables topped with creamy avocado green curry sauce",
     price: "$27.95",
     badge: "House Special",
-    bgGradient: "from-emerald-900/80 to-emerald-700/80",
+    image: "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=640&h=480&fit=crop&q=80",
   },
   {
     name: "Chu Chee Crispy Duck",
-    description:
-      "Crispy duck topped with Chu Chee curry sauce and a side of mixed vegetables with kaffir lime leaves",
+    description: "Crispy duck topped with Chu Chee curry sauce and a side of mixed vegetables with kaffir lime leaves",
     price: "$27.95",
     badge: null,
-    bgGradient: "from-red-900/80 to-red-700/80",
+    image: "https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=640&h=480&fit=crop&q=80",
   },
   {
     name: "Pineapple Fried Rice",
-    description:
-      "Stir-fried jasmine rice with egg, pineapple, roasted cashew nut, raisin, carrot, onion with a hint of curry flavor",
+    description: "Stir-fried jasmine rice with egg, pineapple, roasted cashew nut, raisin, carrot, onion with a hint of curry flavor",
     price: "From $15.95",
     badge: null,
-    bgGradient: "from-yellow-900/80 to-yellow-700/80",
+    image: "https://images.unsplash.com/photo-1512058564366-18510be2db19?w=640&h=480&fit=crop&q=80",
   },
   {
     name: "Drunken Noodle",
-    description:
-      "Stir-fried wide ribbon rice noodles with bell pepper, onion, green bean, carrot, Thai chili, and basil leaves",
+    description: "Stir-fried wide ribbon rice noodles with bell pepper, onion, green bean, carrot, Thai chili, and basil leaves",
     price: "From $15.95",
     badge: null,
-    bgGradient: "from-rose-900/80 to-rose-700/80",
+    image: "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=640&h=480&fit=crop&q=80",
   },
 ];
 
@@ -58,7 +52,7 @@ export default function FeaturedDishes() {
 
   const scroll = (direction: "left" | "right") => {
     if (scrollRef.current) {
-      const scrollAmount = 340;
+      const scrollAmount = 360;
       scrollRef.current.scrollBy({
         left: direction === "left" ? -scrollAmount : scrollAmount,
         behavior: "smooth",
@@ -70,16 +64,15 @@ export default function FeaturedDishes() {
     <section id="featured" className="section-padding bg-hero-bg">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-14">
           <p className="text-primary font-body text-sm tracking-widest uppercase mb-4">
             Signature Flavors
           </p>
-          <h2 className="font-heading text-4xl sm:text-5xl text-text-on-dark mb-4">
+          <h2 className="font-heading text-4xl sm:text-5xl text-white mb-4">
             Featured Dishes
           </h2>
-          <p className="text-text-on-dark/60 max-w-xl mx-auto">
-            Our most beloved dishes, crafted with authentic recipes and the
-            freshest ingredients
+          <p className="text-white/50 max-w-xl mx-auto">
+            Our most beloved dishes, crafted with authentic recipes and the freshest ingredients
           </p>
         </div>
 
@@ -88,20 +81,20 @@ export default function FeaturedDishes() {
           {/* Scroll Buttons */}
           <button
             onClick={() => scroll("left")}
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 bg-surface/90 hover:bg-surface text-text-primary w-10 h-10 rounded-full shadow-lg hidden sm:flex items-center justify-center transition-colors"
+            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-2 sm:-translate-x-5 z-10 bg-white/95 hover:bg-white text-secondary w-11 h-11 rounded-full shadow-xl hidden sm:flex items-center justify-center transition-all hover:scale-110"
             aria-label="Scroll left"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M15 19l-7-7 7-7" />
             </svg>
           </button>
           <button
             onClick={() => scroll("right")}
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 bg-surface/90 hover:bg-surface text-text-primary w-10 h-10 rounded-full shadow-lg hidden sm:flex items-center justify-center transition-colors"
+            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-2 sm:translate-x-5 z-10 bg-white/95 hover:bg-white text-secondary w-11 h-11 rounded-full shadow-xl hidden sm:flex items-center justify-center transition-all hover:scale-110"
             aria-label="Scroll right"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
             </svg>
           </button>
 
@@ -111,42 +104,38 @@ export default function FeaturedDishes() {
             className="flex gap-6 overflow-x-auto hide-scrollbar pb-4 snap-x snap-mandatory"
           >
             {featuredDishes.map((dish) => (
-              <div
-                key={dish.name}
-                className="flex-shrink-0 w-[300px] sm:w-[320px] snap-start"
-              >
-                <div className="rounded-xl overflow-hidden bg-secondary border border-white/10 hover:border-primary/30 transition-all duration-300 group h-full flex flex-col">
-                  {/* Image Area */}
-                  <div className={`relative h-48 bg-gradient-to-br ${dish.bgGradient} flex items-center justify-center`}>
-                    <div className="text-center p-4">
-                      <svg className="w-16 h-16 text-white/40 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                      </svg>
-                    </div>
+              <div key={dish.name} className="flex-shrink-0 w-[300px] sm:w-[340px] snap-start">
+                <div className="rounded-2xl overflow-hidden bg-white/[0.06] border border-white/10 hover:border-primary/40 transition-all duration-500 group h-full flex flex-col hover:-translate-y-1">
+                  {/* Image */}
+                  <div className="relative h-52 overflow-hidden">
+                    <img
+                      src={dish.image}
+                      alt={dish.name}
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
                     {dish.badge && (
-                      <span className="absolute top-3 right-3 bg-primary text-text-on-primary text-xs font-bold px-3 py-1 rounded-full">
+                      <span className="absolute top-4 right-4 bg-primary text-secondary text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">
                         {dish.badge}
                       </span>
                     )}
                   </div>
 
                   {/* Content */}
-                  <div className="p-5 flex-1 flex flex-col">
-                    <h3 className="font-heading text-2xl sm:text-3xl text-text-on-dark mb-2 group-hover:text-primary transition-colors">
+                  <div className="p-6 flex-1 flex flex-col">
+                    <h3 className="font-heading text-2xl text-white mb-2 group-hover:text-primary transition-colors">
                       {dish.name}
                     </h3>
-                    <p className="text-text-on-dark/50 text-sm leading-relaxed flex-1">
+                    <p className="text-white/40 text-sm leading-relaxed flex-1">
                       {dish.description}
                     </p>
-                    <div className="mt-4 flex items-center justify-between">
-                      <span className="text-primary font-bold text-lg">
-                        {dish.price}
-                      </span>
-                      <a
-                        href="#menu"
-                        className="text-text-on-dark/40 hover:text-primary text-sm transition-colors"
-                      >
-                        View in Menu &rarr;
+                    <div className="mt-5 flex items-center justify-between pt-4 border-t border-white/10">
+                      <span className="text-primary font-bold text-lg">{dish.price}</span>
+                      <a href="#menu" className="text-white/40 hover:text-primary text-sm transition-colors inline-flex items-center gap-1">
+                        View in Menu
+                        <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
                       </a>
                     </div>
                   </div>

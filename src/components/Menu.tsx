@@ -229,7 +229,7 @@ export default function Menu() {
               } hover:bg-section-alt-bg/50`}
             >
               <div className="flex-1 pr-4">
-                <h3 className="font-heading text-2xl sm:text-3xl text-text-primary">
+                <h3 className="font-heading text-xl text-text-primary">
                   {item.name}
                 </h3>
                 {item.description && (
